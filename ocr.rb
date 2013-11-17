@@ -9,4 +9,5 @@ e = Tesseract::Engine.new { |e|
   e.blacklist = '|'
 }
 
+# text_for can accept a string representing the img - coerced to IO object(?)
 txt = e.text_for(img).gsub(/\s+/, "") # remove all whitespace
